@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/name-role-value": "off",
+    "highest-available-document-mode": "off",
+    "axe/language": "off"
+  }
+}

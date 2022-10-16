@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto com Local Storage</title>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="dist/img/system.png" type="image/x-icon"/>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="dist/css/style.css"/>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css'/>
+
+</head>
+<body>
+    <button type="button" id="button-toggle-theme" class="button-toggle-theme bi bi-brightness-high-fill"></button>
+    <main id="text">
+        <h2 class="title">Cadastro de Produtos</h2>
+        <form id="product-form">
+            <div class="form-group">
+                <label for="name">NOME:</label>
+                <input type="text" name="name" id="name" placeholder="Nome do Produto" required/>
+            </div>
+
+            <div class="form-group">
+                <label for="Nome">PREÇO:</label>
+                <input type="number" name="price" id="price" placeholder="R$0" required/>
+            </div>
+
+            <div class="form-group">
+                <label for="description">DESCRIÇÃO:</label>
+                <input type="text" name="description" id="description" placeholder="Descreva o produto!"/>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="button">ENVIAR</button>
+            </div>
+        </form>
+    </main>
+    
+    <section id="table-container">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <td class="table-row" id="tdBold">NOME</td>
+                    <td class="table-row" id="tdBold">PREÇO</td>
+                    <td class="table-row" id="tdBold">DESCRIÇÃO</td>
+                    <td class="table-row" id="tdBold">AÇÕES</td>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <div id="update">
+        <form>
+            <input type="text" id="eName" placeholder="Nome" required>
+            <input type="text" id="ePrice" placeholder="Preço" required>
+            <input type="text" id="eDesc" placeholder="Descrição" required>
+            <br>
+            <button type="submit">EDITAR</button>
+            <button type="button">FECHAR</button>
+        </form>
+    </div>
+
+    <script type="module" src="dist/js/scripts.js"></script>
+</body>
+</html>
