@@ -131,12 +131,12 @@ function changeTheme(){
         if(localStorage.getItem("mode") == "light"){
             root.style.setProperty("--background-theme", "#333");
             root.style.setProperty("--font-color", "#fff");
-            root.style.setProperty("--color", "gray 1px solid");
+            root.style.setProperty("--dark-border", "#000 1px solid");
         }
         else{
             root.style.setProperty("--background-theme", "#fff");
             root.style.setProperty("--font-color", "#000" );
-            root.style.setProperty("--color", "#000 1px solid")
+            root.style.setProperty("--dark-border", "#000 1px solid")
         }
     }
 }
