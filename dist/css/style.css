@@ -101,7 +101,7 @@ h2.title {
 }
 
 #table-container table td.table-row {
-    border: var(--color);
+    border: var(--dark-border);
     padding: 0.6rem 1.0rem;
     text-align: center;
 }
